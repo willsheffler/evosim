@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+  <title id="title">Evosim Session Planning Flow</title>
+  <desc id="desc">A simple flow showing plan, setup, verify, and start lesson one.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7fbff"/>
+      <stop offset="100%" stop-color="#eef6ff"/>
+    </linearGradient>
+    <style>
+      .h { font: 700 28px 'Segoe UI', Arial, sans-serif; fill: #16324f; }
+      .t { font: 600 16px 'Segoe UI', Arial, sans-serif; fill: #16324f; }
+      .s { font: 500 14px 'Segoe UI', Arial, sans-serif; fill: #234a6f; }
+      .box { fill: #ffffff; stroke: #90b4d8; stroke-width: 2; rx: 12; }
+      .arr { stroke: #5f8fbd; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#5f8fbd"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="360" fill="url(#bg)"/>
+  <text x="40" y="52" class="h">Evosim Planning Session (2026-02-13)</text>
+
+  <rect class="box" x="40" y="95" width="190" height="150"/>
+  <text x="58" y="128" class="t">1) Define Protocol</text>
+  <text x="58" y="152" class="s">- Evidence cycles</text>
+  <text x="58" y="172" class="s">- DoD criteria</text>
+  <text x="58" y="192" class="s">- Docs structure</text>
+
+  <rect class="box" x="265" y="95" width="190" height="150"/>
+  <text x="283" y="128" class="t">2) Prepare Docs</text>
+  <text x="283" y="152" class="s">- Session log template</text>
+  <text x="283" y="172" class="s">- Asset folders</text>
+  <text x="283" y="192" class="s">- Inline images</text>
+
+  <rect class="box" x="490" y="95" width="190" height="150"/>
+  <text x="508" y="128" class="t">3) Verify in GitHub</text>
+  <text x="508" y="152" class="s">- Push repo</text>
+  <text x="508" y="172" class="s">- Check markdown render</text>
+  <text x="508" y="192" class="s">- Confirm image paths</text>
+
+  <rect class="box" x="715" y="95" width="145" height="150"/>
+  <text x="733" y="128" class="t">4) Lesson 1</text>
+  <text x="733" y="152" class="s">- Start session</text>
+  <text x="733" y="172" class="s">- Build first board</text>
+  <text x="733" y="192" class="s">- Log evidence</text>
+
+  <path class="arr" d="M235,170 L255,170"/>
+  <path class="arr" d="M460,170 L480,170"/>
+  <path class="arr" d="M685,170 L705,170"/>
+</svg>
