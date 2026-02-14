@@ -45,3 +45,9 @@ Thumbs.db
 
 # Editor backup files
 *~
+
+# Synced shared standards
+shared/
+
+# Standards sync metadata
+.standards-last-sync
