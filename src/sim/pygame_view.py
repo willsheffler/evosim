@@ -150,19 +150,21 @@ def draw_frame(
     pygame.draw.rect(screen, PANEL_BACKGROUND, panel_rect)
     pygame.draw.line(screen, PANEL_BORDER, (world_width_px, 0), (world_width_px, world_height_px), 2)
 
-    x_px = int(sim.creature.x * scale)
-    y_px = int(sim.creature.y * scale)
-    pygame.draw.circle(screen, CREATURE_COLOR, (x_px, y_px), radius_px)
+    for creature in sim.creatures:
+        x_px = int(creature.x * scale)
+        y_px = int(creature.y * scale)
+        pygame.draw.circle(screen, CREATURE_COLOR, (x_px, y_px), radius_px)
 
     title = font.render("Control Panel", True, TEXT_COLOR)
     screen.blit(title, (world_width_px + 20, 20))
 
     status = [
         f"Tick: {sim.tick}",
+        f"Creatures: {len(sim.creatures)}",
         f"State: {'playing' if playing else 'paused'}",
         f"FPS: {fps}",
-        f"x={sim.creature.x:.2f}",
-        f"y={sim.creature.y:.2f}",
+        f"x0={sim.creatures[0].x:.2f}",
+        f"y0={sim.creatures[0].y:.2f}",
     ]
     for index, line in enumerate(status):
         text = small_font.render(line, True, TEXT_COLOR)
