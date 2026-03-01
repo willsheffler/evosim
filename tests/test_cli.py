@@ -8,10 +8,11 @@ def test_cli_defaults_are_beginner_friendly() -> None:
     assert args.height == 30.0
     assert args.seed == 7
     assert args.ticks == 456778760
-    assert args.speed == 0.8
-    assert args.creatures == 8
+    assert args.speed == 0.08
+    assert args.creatures == 50
+    assert args.food == 250
     assert args.scale == 30
-    assert args.fps == 6
+    assert args.fps == 120
     assert args.radius == 8
     assert args.screenshot_dir == "screenshots"
     assert args.show_coords is True

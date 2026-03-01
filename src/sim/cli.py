@@ -17,7 +17,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--seed", type=int, default=7, help="Random seed for reproducible start")
     parser.add_argument("--ticks", type=int, default=456778760, help="How many steps to run")
     parser.add_argument("--speed", type=float, default=0.08, help="Movement speed in world units per tick")
-    parser.add_argument("--creatures", type=int, default=8, help="Number of creatures")
+    parser.add_argument("--creatures", type=int, default=50, help="Number of creatures")
+    parser.add_argument("--food", type=int, default=250, help="Number of food pellets")
     parser.add_argument("--scale", type=int, default=30, help="Pixels per world unit in pygame mode")
     parser.add_argument("--fps", type=int, default=120, help="Frames per second in pygame mode")
     parser.add_argument("--radius", type=int, default=8, help="Creature circle radius in pixels")
@@ -44,6 +45,7 @@ def main() -> None:
         seed=args.seed,
         speed=args.speed,
         creatures=args.creatures,
+        food=args.food,
     )
     sim = Simulation(config)
 
